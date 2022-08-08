@@ -1,0 +1,45 @@
+@font-face {
+font-family: 'ChusaLove';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+    font-family: 'MYYeongnamnu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  margin: 0px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: Orange;
+  padding: 5px 15px;
+}
+.navlogo{
+  font-size: 60px;
+  font-family: 'ChusaLove';
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.navitems {
+font-family: 'MYYeongnamnu';
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  font-size: 20px;
+}
+.navitems li {
+  padding: 8px 60px;
+}
+.navitems li:hover {
+  background-color:DeepSkyBlue;
+  border-radius: 6px;
+}
