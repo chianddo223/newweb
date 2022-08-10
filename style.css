@@ -10,15 +10,29 @@ font-style: normal;
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SANGJUGyeongcheonIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
   margin: 0px;
+  background-color: #ebd4aa;
+  color : #333333;
+  font-family: 'SANGJUGyeongcheonIsland';
+}
+h1.home{
+  text-align: center;
+  font-size: 60px;
 }
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: Orange;
+  background-color: #ed9c07;
   padding: 5px 15px;
+  border-radius: 6px;
 }
 .navlogo{
   font-size: 60px;
@@ -27,7 +41,7 @@ body{
 
 a{
   text-decoration: none;
-  color: white;
+  color: #362a2a;
 }
 .navitems {
 font-family: 'MYYeongnamnu';
@@ -38,8 +52,62 @@ font-family: 'MYYeongnamnu';
 }
 .navitems li {
   padding: 8px 60px;
+
 }
 .navitems li:hover {
   background-color:DeepSkyBlue;
   border-radius: 6px;
+}
+.navbar_hambug{
+  position: absolute;
+  right: 32px;
+  top : 20px;
+  font-size: 32px;
+  display: none;
+}
+@media screen and (max-width:768px) {
+ .navbar{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .navitems{
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   display: none;
+ }
+.navitems li{
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+}
+.navicons {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+.navbar_hambug{
+  display: block;
+}
+
+.navicons.active {
+  display: block;
+}
+.navitems.active {
+  display: flex;
+}
+}
+.map{
+  margin-left: 20px;
+  float: left;
+}
+.설명{
+  font-size: 27px;
+  margin: auto 20px;
+  line-height: 60px;
+  text-align: center;
+}
+.whatis{
+  font-size: 40px;
+  text-align: center;
 }
